@@ -43,11 +43,19 @@
         }
 
         .b-0{
-            flex-basis: 0;
+            flex-basis: 100px;
         }
 
         .w100{
             flex-basis: 100px;
+        }
+
+        .s1{
+            flex-shrink: 1;
+        }
+
+        .s2{
+            flex-shrink: 2;
         }
     </style>
 </head>
@@ -75,8 +83,8 @@
 
     <div class="flex-container">
         <div class="item fg-0">A</div>
-        <div class="item fg-3">B</div>
-        <div class="item fg-1">C</div>
+        <div class="item s2 fg-3">B</div>
+        <div class="item s1 fg-1">C</div>
         <div class="item fg-2">D</div>
     </div>
 
