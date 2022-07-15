@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align content</title>
+
+    <style>
+
+        .container{
+            height: 400px;
+            max-width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;            
+        }
+
+        .item{
+            background-color: orangered;
+            padding: 0 5px;
+            margin: 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+            border: 1px solid black;
+        }
+
+        .stretch{
+            align-content: stretch;
+        }
+
+        .center{
+            align-content: center;
+        }
+
+        .flex-start{
+            align-content: flex-start;
+        }
+
+        .flex-end{
+            align-content: flex-end;
+        }
+
+        .spacearound{
+            align-content: space-around;
+        }
+
+        .spacebetween{
+            align-content: space-between;
+        }
+    </style>
+
+</head>
+<body>
+
+    <p>Stretch</p>
+
+    <div class="container stretch">
+
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit tmpe</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Morbi tempus lacus ante, ac pretium du.</div>
+        <div class="item">Cras feugiat dui diam, in feugiat orci egestas vel.</div>
+        <div class="item">Nullam consequat mollis eros sed imperdiet.</div>
+        <div class="item">Quisque blandit diam nec mi convis,arius.</div>
+        <div class="item">Morbi arcu nisl</div>
+    </div>
+
+    <p>Center</p>
+    
+    <div class="container center">
+
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit tmpe</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Morbi tempus lacus ante, ac pretium du.</div>
+        <div class="item">Cras feugiat dui diam, in feugiat orci egestas vel.</div>
+        <div class="item">Nullam consequat mollis eros sed imperdiet.</div>
+        <div class="item">Quisque blandit diam nec mi convis,arius.</div>
+        <div class="item">Morbi arcu nisl</div>
+    </div>
+
+    <p>Flex-start</p>
+    
+    <div class="container flex-start">
+
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit tmpe</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Morbi tempus lacus ante, ac pretium du.</div>
+        <div class="item">Cras feugiat dui diam, in feugiat orci egestas vel.</div>
+        <div class="item">Nullam consequat mollis eros sed imperdiet.</div>
+        <div class="item">Quisque blandit diam nec mi convis,arius.</div>
+        <div class="item">Morbi arcu nisl</div>
+    </div>
+
+    <p>Flex-end</p>
+    
+    <div class="container flex-end">
+
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit tmpe</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Morbi tempus lacus ante, ac pretium du.</div>
+        <div class="item">Cras feugiat dui diam, in feugiat orci egestas vel.</div>
+        <div class="item">Nullam consequat mollis eros sed imperdiet.</div>
+        <div class="item">Quisque blandit diam nec mi convis,arius.</div>
+        <div class="item">Morbi arcu nisl</div>
+    </div>
+
+    <p>Spacearound</p>
+    
+    <div class="container spacearound">
+
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit tmpe</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Morbi tempus lacus ante, ac pretium du.</div>
+        <div class="item">Cras feugiat dui diam, in feugiat orci egestas vel.</div>
+        <div class="item">Nullam consequat mollis eros sed imperdiet.</div>
+        <div class="item">Quisque blandit diam nec mi convis,arius.</div>
+        <div class="item">Morbi arcu nisl</div>
+    </div>
+    
+    <p>spacebetween</p>
+    
+    <div class="container spacebetween">
+
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit tmpe</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Morbi tempus lacus ante, ac pretium du.</div>
+        <div class="item">Cras feugiat dui diam, in feugiat orci egestas vel.</div>
+        <div class="item">Nullam consequat mollis eros sed imperdiet.</div>
+        <div class="item">Quisque blandit diam nec mi convis,arius.</div>
+        <div class="item">Morbi arcu nisl</div>
+    </div>
+</body>
+</html>
